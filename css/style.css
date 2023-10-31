@@ -201,7 +201,7 @@ button:focus {
 }
 
 .home__title {
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 
@@ -232,8 +232,8 @@ button:focus {
 
 .home_shadowBox {
     width: 40rem;
-    height: 17rem;
-    border-radius: 20px;
+    height: 16rem;
+    border-radius: 20%;
     background-color: #212529;
     margin: auto;
     border-radius: 10px;
