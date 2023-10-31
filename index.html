@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>    
+<html lang="ko">  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chanwoo$#39;s Portfolio</title>
+    <title>Chanwoo&#39;s Portfolio</title>
     <meta 
         name="description"
         content="찬우의 포트폴리오 사이트">
@@ -11,14 +10,22 @@
     <link rel="shortcut icon" href="/profile_images/Profile-rect.ico">
     <meta property="og:title" content="찬우의 포트폴리오"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="배포후 생성된 URL"/>
-    <meta property="og:image" content="/chanwoo_portfolio/images/favicon.ico"/>
+    <meta property="og:url" content="https://mcw9503.github.io/chanwoo_portfolio/"/>
+    <meta property="og:image" content="https://mcw9503.github.io/chanwoo_portfolio/chanwoo_portfolio/images/og.webp"/>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@100;600&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/f912fed76e.js" crossorigin="anonymous"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="/chanwoo_portfolio/css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,14 +33,13 @@
     <script type="module" src="/chanwoo_portfolio/src/main.js" defer></script>
     <script type ="module" src="/chanwoo_portfolio/src/projects.js" defer></script>
     <script type ="module" src="/chanwoo_portfolio/src/active_menu.js" defer></script>
+    <script type ="module" src="/chanwoo_portfolio/src/type.js" defer></script>
 </head>
 <body>
     <!-- header -->
     <header class="header"> 
         <div class="header__logo">
-            <img class="header__logo__img" src="/chanwoo_portfolio/images/favicon.ico" alt="logo">
             <h1 class="header__logo__title"><a href="#">Chanwoo moon</a></h1>
-            <h1>Chanwoo moon</h1>
         </div>
         <nav class="header__nav">
             <ul class="header__menu">
@@ -55,46 +61,63 @@
         <section id="home">
             <div class="home__container">
                 <img class="home__avatar" src="/chanwoo_portfolio/images/profile.jpg" alt="" width="320px" height="380px">
-                <h2 class="home__title">Hello </br> I&#39;m <strong class="home__title--strong">Chanwoo Moon</strong></h2>
-                <p class="home__description">A Back-End, Front-End Developer in Seoul</p>
-                <a class="home__contact" href="#contact">Contact Me</a>
+                <div class="home_shadowBox">
+                    <h2 class="home__title">Hello </br> I&#39;m <strong class="home__title--strong">Developer Chanwoo moon</strong></h2>
+                    <p class="home__description">A Back-End, Front-End Developer in Seoul</p>
+                    <a class="home__contact" href="#contact">Contact Me</a>
+                </div>
             </div>
         </section>
         <!-- about -->
         <section id="about" class="section max-container">
-            <h2 class="title">About me</h2>
-            <p class="description">한 여름에 마당에 둔 개밥이 쉬듯 변하는 IT시장에서 살아남을 개발자가 되고 싶은 </p>
-        <ul class="majors">
-            <li class="major">
-                <i class="fa-brands fa-js major__icon"></i>
-                <p class="major__title">Front-end</p>
-                <p>HTML, CSS, JavaScript, React</p>
-            </li>
-            <li class="major">
-                <i class="fa-brands fa-java major__icon"></i>
-                <p class="major__title">Back-end</p>
-                <p>HTML, CSS, JavaScript, React</p>
-            </li> 
-            <li class="major">
-                <i class="fa-solid fa-window-restore major__icon"></i>
-                <p class="major__title">website</p>
-                <p>HTML, CSS, JavaScript, React</p>
-            </li>
-        </ul>
-        <ul class="jobs">
-            <li class="job">kh정보교육원 수료</li>
-            <img src="/chanwoo_portfolio/images/kh_logo.png" alt="kh_logo" height="50px" width="50px"/>
-            <div>
-                <p class="job__name">kh정보교육원 종로지원 수료</p>
-                <p class="job__period">2023.07.13</p>
+            <h2 class="title">About Me</h2>
+            <div class="about__box">
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-person"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">이름</div>
+                        <div class="about__info_subs">문찬우</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-calendar"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">생년월일</div>
+                        <div class="about__info_subs">95.03.17</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-location-dot"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">주소지</div>
+                        <div class="about__info_subs">서울특별시 은평구 진관동</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-phone"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">연락처</div>
+                        <div class="about__info_subs">010-8610-4724</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-envelope"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">이메일</div>
+                        <div class="about__info_subs">anscksdn2@naver.com</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-pencil"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">학력</div>
+                        <div class="about__info_subs">명지전문대학교(산업경영공학)</div>
+                        <div class="about__info_subs">kh정보교육원 수료</div>
+                    </div>
+                </div>
             </div>
-            <li class="job">명지전문대학교 졸업</li>
-            <img src="/chanwoo_portfolio/images/mj_logo.png" alt="mj_logo"/>
-            <div>
-                <p class="job__name">산업경영공학과 전공</p>
-                <P class="job__period">2020.02.26</P>
-            </div>
-        </ul>
+            <div class="goal">* 한 여름에 마당에 둔 개밥이 쉬듯 변하는 IT시장에서 살아남을 개발자가 되는 것이 목표 <i class="fa-solid fa-exclamation"></i></div>
+            <br>
         </section>
         <!-- skills -->
         <section id="skills" class="section max-container">
@@ -108,48 +131,49 @@
                     <ul>
                         <li class="bar">
                             <div class="bar__metadata">
-                                <span>HTML</span><span>98%</span>
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/html.png">html</span><span>98%</span>
                             </div>
                             <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
                         </li>
                         <li class="bar">
                             <div class="bar__metadata">
-                                <span>CSS</span><span>98%</span>
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/css.png">css</span><span>98%</span>
                             </div>
                             <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
                         </li>
                         <li class="bar">
                             <div class="bar__metadata">
-                                <span>JavaScript</span><span>88%</span>
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/javascript.png">javascript</span><span>88%</span>
                             </div>
                             <div class="bar__bg"><div class="bar__value" style="width: 88%"></div></div>
                         </li>
                         <li class="bar">
                             <div class="bar__metadata">
-                                <span>Java</span><span>78%</span>
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/java.png">java</span><span>78%</span>
                             </div>
                             <div class="bar__bg"><div class="bar__value" style="width: 78%"></div></div>
                         </li>
                         <li class="bar">
                             <div class="bar__metadata">
-                                <span>Sql</span><span>68%</span>
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/oracle2.png">sql</span><span>78%</span>
                             </div>
-                            <div class="bar__bg"><div class="bar__value" style="width: 68%"></div></div>
+                            <div class="bar__bg"><div class="bar__value" style="width: 78%"></div></div>
                         </li>
                     </ul>
                 </section>
                 <section class="skills__tools">
                     <h3 class="skills__title">Tools</h3>
                     <ul>
+                        <li><img class="toolsIcon" src="/chanwoo_portfolio/images/visual_studio.png"></li>
                         <li>Visual Studio</li>
+                        <li><img class="toolsIcon" src="/chanwoo_portfolio/images/eclipse2.png"></li>
                         <li>Eclipse</li>
                     </ul>
                 </section>
                 <section class="skills__etc">
-                    <h3 class="skills__title">Etc</h3>
+                    <h3 class="skills__title">Version Control</h3>
+                    <img class="toolsIcon" src="/chanwoo_portfolio/images/github.png">
                     <ul>
-                        <li>Git</li>
-                        <li>Git</li>
                         <li>Git</li>
                     </ul>
                 </section>
