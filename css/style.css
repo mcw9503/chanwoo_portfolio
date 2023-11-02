@@ -83,6 +83,12 @@ button:focus {
 .title {
     font-size: 2.5rem;
     margin: 1rem 0;
+    color: var(--color-accent);
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 15px;
+    
 }
 
 .goal {
@@ -200,6 +206,11 @@ button:focus {
     border-radius: 100%;
 }
 
+
+.home__avatar:hover{
+    background: url("/chanwoo_portfolio/images/profile2.jpg");
+}
+
 .home__title {
     font-size: 2rem;
 
@@ -232,7 +243,7 @@ button:focus {
 
 .home_shadowBox {
     width: 40rem;
-    height: 16rem;
+    height: 19rem;
     border-radius: 20%;
     background-color: #212529;
     margin: auto;
@@ -277,8 +288,6 @@ button:focus {
     height: 30px;
     margin: 1rem;
 }
-
-
 
 .major__imgbox span{
     font-family: Arial, Helvetica, sans-serif;
@@ -335,7 +344,7 @@ button:focus {
 .about__info_subs {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 0.9rem;
-    font-weight: 100;
+    font-weight: 300;
     opacity: 0.7;
 }
 
@@ -495,21 +504,16 @@ button:focus {
     top: 0;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-}
-
 .project {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .project__img{
-    width: 100%;
+    width: 40%;
+    height: 70%;
 }
 
 .project__metadata {
@@ -562,16 +566,18 @@ button:focus {
 }
 
 .testimonial__img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 250px;
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .testimonial__bubble{
+    font-family: Noto Sans KR,sans-serif;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 8px;
+    font-weight: 300;
 }
 
 /*Footer*/

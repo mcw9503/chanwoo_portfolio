@@ -41,3 +41,18 @@ navbarMenu.addEventListener('click', () => {
     navbarMenu.classList.remove('open');
 })
 
+
+//profile hover시 이미지 변경
+const avatar = document.querySelector('.home__avatar');
+avatar.addEventListener('mousemove',()=>{
+    setTimeout(function(){
+        avatar.src="/chanwoo_portfolio/images/profile3.jpg";
+    },200)
+
+})
+
+avatar.addEventListener('mouseout',()=>{
+    setTimeout(function(){
+        avatar.src="/chanwoo_portfolio/images/profile2.jpg";
+    },200)
+})
