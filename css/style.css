@@ -207,9 +207,9 @@ button:focus {
 }
 
 
-.home__avatar:hover{
+/* .home__avatar:hover{
     background: url("../images/profile3.jpg");
-}
+} */
 
 .home__title {
     font-size: 2rem;
