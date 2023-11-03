@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanwoo&#39;s Portfolio</title>
+    <meta 
+        name="description"
+        content="찬우의 포트폴리오 사이트">
+    <meta name="author" content="MoonChanwoo"/>
+    <link rel="shortcut icon" href="/profile_images/Profile-rect.ico">
+    <meta property="og:title" content="찬우의 포트폴리오"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://mcw9503.github.io/chanwoo_portfolio/"/>
+    <meta property="og:image" content="https://mcw9503.github.io/chanwoo_portfolio/chanwoo_portfolio/images/og.webp"/>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@100;600&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f912fed76e.js" crossorigin="anonymous"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/chanwoo_portfolio/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Javascript -->
+    <script type="module" src="/chanwoo_portfolio/src/main.js" defer></script>
+    <script type ="module" src="/chanwoo_portfolio/src/projects.js" defer></script>
+    <script type ="module" src="/chanwoo_portfolio/src/active_menu.js" defer></script>
+    <script type ="module" src="/chanwoo_portfolio/src/type.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header"> 
+        <div class="header__logo">
+            <h1 class="header__logo__title"><a href="#">Chanwoo moon</a></h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__menu__item active" href="#home">Home</a></li>
+                <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="#skills">Skills</a></li>
+                <li><a class="header__menu__item" href="#work">My&nbspwork</a></li>
+                <li><a class="header__menu__item" href="#testimonials">Introduce</a></li>
+                <li><a class="header__menu__item" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="header__toggle" aria-label="navigation menu toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- home -->
+        <section id="home">
+            <div class="home__container">
+                <img class="home__avatar" src="/chanwoo_portfolio/images/profile2.jpg" alt="" width="320px" height="380px">
+                <!-- <img class="home__avatar2" src="/chanwoo_portfolio/images/profile2.jpg" alt="" width="320px" height="380px"> -->
+                <div class="home_shadowBox">
+                    <br>
+                    <h2 class="home__title">안녕하세요! </br> 저는<strong class="home__title--strong">&nbsp 개발자 문찬우</strong></h2>
+                    <br>
+                    <p class="home__description">한 여름에 마당에 놓아 둔 개밥이 쉬듯 변하는<br>
+                        IT시장에서 살아남을 개발자가 되겠습니다!</p>
+                    <a class="home__contact" href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about" class="section max-container">
+            <h2 class="title">About Me</h2>
+            <div class="about__box">
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-person"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">이름</div>
+                        <div class="about__info_subs">문찬우</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-calendar"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">생년월일</div>
+                        <div class="about__info_subs">95.03.17</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-location-dot"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">주소지</div>
+                        <div class="about__info_subs">서울특별시 은평구 진관동</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-phone"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">연락처</div>
+                        <div class="about__info_subs">010-8610-4724</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-envelope"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">이메일</div>
+                        <div class="about__info_subs">anscksdn2@naver.com</div>
+                    </div>
+                </div>
+                <div class="about__boxTab">
+                    <i class="about__icon fa-solid fa-pencil"></i>
+                    <div class="about__info">
+                        <div class="about__info_name">학력</div>
+                        <div class="about__info_subs">명지전문대학교(산업경영공학)</div>
+                        <div class="about__info_subs">kh정보교육원 수료</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goal">* 도전을 두려워하지 않고 실패는 성장의 지름길이라는 마음으로 <i class="fa-solid fa-exclamation"></i></div>
+            <br>
+        </section>
+        <!-- skills -->
+        <section id="skills" class="section max-container">
+          <div class="max-conationer">
+            <h2 class="title">My Skills</h2>
+            <p class="description">Skills & Attributes</p>
+            <p>나의 프로그래밍 장점..</p>
+            <div class="skills">
+                <section class="skills__coding">
+                    <h3 class="skills__title">Coding Skills</h3>
+                    <ul>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/html.png">html</span><span>78%</span>
+                            </div>
+                            <div class="bar__bg"><div class="bar__value" style="width: 78%"></div></div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/css.png">css</span><span>68%</span>
+                            </div>
+                            <div class="bar__bg"><div class="bar__value" style="width: 68%"></div></div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/javascript.png">javascript</span><span>68%</span>
+                            </div>
+                            <div class="bar__bg"><div class="bar__value" style="width: 68%"></div></div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/java.png">java</span><span>58%</span>
+                            </div>
+                            <div class="bar__bg"><div class="bar__value" style="width: 58%"></div></div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span><img class="major__img" src="/chanwoo_portfolio/images/oracle2.png">sql</span><span>48%</span>
+                            </div>
+                            <div class="bar__bg"><div class="bar__value" style="width: 48%"></div></div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="skills__tools">
+                    <h3 class="skills__title">Tools</h3>
+                    <ul>
+                        <li><img class="toolsIcon" src="/chanwoo_portfolio/images/visual_studio.png"></li>
+                        <li>Visual Studio</li>
+                        <li><img class="toolsIcon" src="/chanwoo_portfolio/images/eclipse2.png"></li>
+                        <li>Eclipse</li>
+                    </ul>
+                </section>
+                <section class="skills__etc">
+                    <h3 class="skills__title">Version Control</h3>
+                    <img class="toolsIcon" src="/chanwoo_portfolio/images/github.png">
+                    <ul>
+                        <li>Github</li>
+                    </ul>
+                </section>
+            </div>
+          </div>
+        </section>
+        <!-- work -->
+        <section id="work" class="section">
+            <div class="max-container">
+                <h2 class="title">My work</h2>
+                <p class="description">Projects</p>
+                <!-- <ul class="categories">
+                    <li>
+                        <button class="category category--selected">
+                            All<span class="category__count">8</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category">
+                            Front-end<span class="category__count">3</span>
+                        </button>
+                        </li>
+                    <li>
+                        <button class="category">
+                            Back-end<span class="category__count">3</span>
+                        </button>
+                        </li>
+                    <li>
+                        <button class="category">
+                            wepsite<span class="category__count">2</span>
+                        </button>
+                    </li>
+                </ul> -->
+                <ul class="projects">
+                    <li class="project">
+                            <a href="https://github.com/rlatneo/final-proj" target="_blank">
+                                <img src="/chanwoo_portfolio/images/hollosekki.jpg" alt="project" class="project__img"/>
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Hollosekki<br>  ㅎㄹㅅㄲ</h3>
+                                    <p>홀로세끼는 증가하는 1인가구의 건강한 삼시 세끼를 위한 <br>
+                                        식자재 구매 및 맞춤 레시피 공유 사이트입니다.</p>
+                                </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                            <a href="https://github.com/rlatneo/final-proj" target="_blank">
+                                <img src="/chanwoo_portfolio/images/hollosekki.jpg" alt="project" class="project__img"/>
+                                <div class="project__metadata">
+                                    <h3 class="project__title">Hollosekki<br>  ㅎㄹㅅㄲ</h3>
+                                    <p>홀로세끼는 증가하는 1인가구의 건강한 삼시 세끼를 위한 <br>
+                                        식자재 구매 및 맞춤 레시피 공유 사이트입니다.</p>
+                                </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- testimonials -->
+        <section id="testimonials" class="section max-container">
+        <h2 class="title">introduce</h2>
+        <p class="description">제 소개를 해볼게요!</p> 
+        <ul class="testimonials">
+            <li class="testimonial">
+                <img src="/chanwoo_portfolio/images/profile3.jpg" alt="people1" class="testimonial__img">
+                <div class="testimonial__bubble">
+                    <p>저는 산업경영공학과에서 처음으로 프로그래밍 언어를 접하게 되었습니다.
+                    산업경영공학과는 다양한 공학을 배우기 때문에 컴퓨터공학은 한과목밖에 되지 않아서 제대로 배우지 못했지만 <br> 거기서 배운
+                    프로그램밍은 너무나 흥미롭게 느껴졌습니다. 졸업 후 직장을 다니면서 조금씩 준비하다가 퇴사 후 제대로 배워보자는 마음에 교육원에 들어갔습니다. 
+                    처음으로 제대로 배운 프로그래밍은 
+                    생각보다 어려운 부분이 많았지만 결국 원하는 데이터를 얻어냈을 때는 개발의 큰 재미로 다가옵니다. 아직은 미숙할 지라도 더 큰 개발자로 성장해나갈 것 입니다!</p>
+                    <p>여기까지 읽어주셔서 감사합니다 !!</p>
+                </div>
+            </li>      
+        </ul>
+        </section>
+    <!-- arrow -->
+        <aside>
+            <a class="arrow-up" href="#home" title="back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </aside>
+    </main>
+    <!-- footer -->
+    <footer id="contact" class="section">
+        <div class="max-container">
+            <h2>Let&#39;s talk</h2>
+            <p>anscksdn2@naver.com</p>
+            <ul class="contact__links">
+                <li>
+                    <a class="contact__link"
+                    href="https://github.com/mcw9503" title="my github link" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact__link"
+                    href="https://www.instagram.com/chwoo__0317" title="my instagram link" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>©Developer Chanwoo Moon - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
