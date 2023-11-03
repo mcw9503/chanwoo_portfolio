@@ -722,6 +722,11 @@ button:focus {
         order: 0;
     }
 
+    .testimonial__img {
+        width: 200px;
+        height: 200px;
+    }
+
     .arrow-up {
         font-size: 2rem;
         width: 3rem;
