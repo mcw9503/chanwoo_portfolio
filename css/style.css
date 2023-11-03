@@ -173,7 +173,7 @@ button:focus {
     position: relative;
     /* background-color: var(--color-primary);
     background: var(--home-bg-gradient); */
-    background-image: url(/chanwoo_portfolio/images/bgImg.jpg); 
+    background-image: url(images/bgImg.jpg); 
     background-position: left;
     background-size: 100%;
     color:var(--color-text);
@@ -208,7 +208,7 @@ button:focus {
 
 
 .home__avatar:hover{
-    background: url("/chanwoo_portfolio/images/profile2.jpg");
+    background: url("images/profile2.jpg");
 }
 
 .home__title {
