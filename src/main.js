@@ -46,13 +46,13 @@ navbarMenu.addEventListener('click', () => {
 const avatar = document.querySelector('.home__avatar');
 avatar.addEventListener('mousemove',()=>{
     setTimeout(function(){
-        avatar.src="/chanwoo_portfolio/images/profile3.jpg";
+        avatar.src="images/profile3.jpg";
     },200)
 
 })
 
 avatar.addEventListener('mouseout',()=>{
     setTimeout(function(){
-        avatar.src="/chanwoo_portfolio/images/profile2.jpg";
+        avatar.src="images/profile2.jpg";
     },200)
 })
